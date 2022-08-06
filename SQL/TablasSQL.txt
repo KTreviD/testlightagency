@@ -1,0 +1,1 @@
+Este es el codigo que se me pidio de las 3 tablas, se importan en MySQL para poder empezar a usar la tabla.

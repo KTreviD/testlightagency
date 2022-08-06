@@ -4,7 +4,7 @@ HTML: 100% CSS: 100% JavaScript: 100% TypeScript: 80%
 React: 100% PHP: 60% MySQL/SQL:70% NodeJS: 100%
 Mi portafolio es carlostredue.com
 En la creacion de la base de datos escogi el nivel basico, en la comunicacion PHP con la base de datos escogi 
-el nivel intermedio, en la parte del frontend escogi el nivel avanzado. 
+el nivel intermedio, en la parte del frontend escogi el nivel intermedio. 
 
 Para instalar debes de importar las 3 tablas SQL que exporte en la carpeta SQL.
 Despues en el archivo index.php, la unica parte que es de PHP que dice include, ahi primero sustituye el

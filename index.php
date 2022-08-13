@@ -8,20 +8,24 @@
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 	</head>
 	<body>
+		<?php
+			include('PHP/200productos.php');
+		?>
+		<?php
+			include('PHP/1000comentarios.php');
+		?>
 		<header>
 			<ul>
 				<li class="LinksMenu">
 					<a href="index.php">Home</a>
 				</li>
 				<li class="LinksMenu">
-					<a href="destacados.php">Destacados</a>
+					<a href="PHP/destacados.php">Destacados</a>
 				</li>
 				<li class="LinksMenu">
-					<a href="vendidos.php">Mas vendidos</a>
+					<a href="PHP/vendidos.php">Mas vendidos</a>
 				</li>
-				<li class="LinksMenu Buscador">
-					<input placeholder="Escribe..."></input>
-				</li>
+
 			</ul>
 		</header>
 		<div class="Contenedor">
@@ -77,7 +81,7 @@
 				<h2 class="TituloSecciones">Productos destacados</h2>
 				<span class="SeparadorSecciones"></span>
 					<?php
-						include('BDConectada.php');
+						include('PHP/10Random.php');
 					?>
 
 				<h2 class="TituloSecciones">Productos mas vendidos</h2>
@@ -88,8 +92,10 @@
 					
 			</div>
 		</div>	
+		<div class="MetodosPago">
+			<img class="ImgMetodos" src="https://ddtech.mx/assets/img/logos-pagos.png?1583611042" alt=""> 
+		</div>
 		<script type="text/javascript" src="JavaScript/Js.js"></script>
-
 	</body>
 
 </html>

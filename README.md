@@ -7,11 +7,7 @@ En la creacion de la base de datos escogi el nivel basico, en la comunicacion PH
 el nivel intermedio, en la parte del frontend escogi el nivel intermedio. 
 
 Para instalar debes de importar las 3 tablas SQL que exporte en la carpeta SQL.
-Despues en el archivo index.php, la unica parte que es de PHP que dice include, ahi primero sustituye el
-archivo "BDConectada.php" por "200productos.php" y carga la pagina, para que se generen los 200 
-productos, despues sustituyelo por el archivo "1000comentarios.php", se generaran los comentarios
-despues sustituyelo por el archivo "10Random.php", ese archivo genera la primera parte que se pidio
-con los 10 productos mostrados al azar.
+La primera vez que cargues el index.php va a tardar un tiempo, esto debido a que esta haciendo las peticiones Update a la base de datos y tiene que hacer 1 por cada comentario y se estan creando mil.
 
 Listado de actividades que logre completar:
 1-Crear un script SQL que me genere las 3 tablas que se me piden.

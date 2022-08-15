@@ -239,13 +239,14 @@ ul a {
 }
 .ContenedorResultados {
 	position: relative;
-	width: 176px;
+	width: 196px;
 	height: fit-content;
 	z-index: 10;
 }
 .BuscadorContenedor {
 	position: relative;
     display: inline-block;
+	top: 11px;
     width: 196px;
     height: 40px;
 	z-index: 1000;

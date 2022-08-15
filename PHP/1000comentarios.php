@@ -1,5 +1,6 @@
 <?php
-	include('BDConectada.php');
+	include('../Install/BDConectada.php');
+	//Aqui checamos si ya existen registros en la base de datos.
 	//Asi solo se ejecutara una vez.
 	$sql = 'SELECT * FROM comentarios';
 	$sql = $db->prepare($sql);

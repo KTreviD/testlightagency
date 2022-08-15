@@ -1,5 +1,5 @@
 <?php
-	include('BDConectada.php');
+	include('../Install/BDConectada.php');
 	include('crearPaginaItem.php');
 	//Aqui checamos si ya existen registros en la base de datos.
 	//Asi solo se ejecutara una vez.

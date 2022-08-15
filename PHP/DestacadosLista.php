@@ -1,5 +1,5 @@
 <?php
-	include('BDConectada.php');
+	include('../Install/BDConectada.php');
 
 	echo '<link rel="stylesheet" type="text/css" href="../Css/Home.css">';
 	//Aqui hago la consulta de todos los productos.
@@ -8,19 +8,19 @@
 	$sql->execute();
 	$MasVendidos = $sql -> fetchAll(PDO::FETCH_OBJ);
 	//Aqui simulo como si cada comentario fuera una venta, ordeno los productos de mayor a menor por cantidad de comentarios.
-	function sort_by_orden ($a, $b) {
+	function ordenar ($a, $b) {
 		return $b -> Calificacion - $a -> Calificacion;
 	}
-	usort($MasVendidos, 'sort_by_orden');
+	usort($MasVendidos, 'ordenar');
 	//Muestro los primeros 10 productos.
 	$i = 0;
 	
 	while($i < count($MasVendidos)) {
 		if($MasVendidos[$i] -> Calificacion == 0) $CalificacionPromedio = ' Not rated';
 		else $CalificacionPromedio = $MasVendidos[$i] -> Calificacion;
-		echo '<a class="LinkProducto" href="../PaginasItems/Producto'.($i + 1).'.html">';
+		echo '<a class="LinkProducto" href="PaginasItems/Producto'.$MasVendidos[$i] -> Id.'.html">';
 		echo '	<div class="Producto">';
-		echo '		<img class="Img" src='.'../Imagenes/Computadora'.(rand(1,10)).'.jpg></img>';
+		echo '		<img class="Img" src='.'../Imagenes/Computadora'.substr(strval($MasVendidos[$i] -> Id), -1).'.jpg></img>';
 		echo '		<div class="DivInfo">';
 		echo '			<p class="Modelo">'.$MasVendidos[$i] -> Marca.' - '.$MasVendidos[$i] -> Modelo.'</p>';
 		echo '			<p class="Precio">Precio: $'.$MasVendidos[$i] -> Precio.'</p>';

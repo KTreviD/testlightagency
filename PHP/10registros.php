@@ -1,5 +1,5 @@
 <?php
-	include('BDConectada.php');
+	include('../Install/BDConectada.php');
 
 	function crearValoresPeticionSQL($numTabla) {
 		$valorGlobal = '';

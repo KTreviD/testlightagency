@@ -1,0 +1,1 @@
+Esto esta para que GitHub detecte la carpeta y no haya problema a la hora de crear las paginas individuales de cada producto.

@@ -13,7 +13,7 @@ nombre testlight, despues en la seccion de importar seleccionas el archivo SQL "
 le das importar y ya tienes tu base de datos completa.
 Puse 3 capturas de pantallas que te guian para seguir los pasos anteriores.
 
-Ahora tienes que irte a localhost/testlightagency/index.php para ver la pagina.
+Ahora tienes que irte a localhost/testlightagency/public_html/index.php para ver la pagina.
 La primera vez que cargues el index.php va a tardar un tiempo, esto debido a que esta haciendo las peticiones Update a la base de datos y tiene que hacer 1 por cada comentario y se estan creando mil.
 
 
